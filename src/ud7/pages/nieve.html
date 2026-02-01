@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nieve</title>
+    <link rel="icon" type="image/png" href="../assets/js-logo.svg" />
+    <style>
+      body {
+        background: radial-gradient(
+          ellipse at bottom,
+          #1b2735 0%,
+          #090a0f 100%
+        );
+        overflow-x: hidden;
+        min-height: 100vh;
+        overflow-y: hidden;
+        color: white;
+      }
+
+      .snowflake {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 10px white);
+      }
+    </style>
+  </head>
+  <body id="pagina-activa" data-pagina-activa="nieve">
+    <div id="snow"></div>
+    <div class="contenedor-centrado">
+      <h1 style="color: white">Nieve</h1>
+      <a href="../../index.html" class="boton">VOLVER AL INDICE</a>
+    </div>
+    <script type="module" src="../04.js" defer></script>
+  </body>
+</html>
